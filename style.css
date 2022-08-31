@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    font-weight: 100;
+    color: #333;
+}
+
+ul {
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 0.4em 0.9em;
+    margin: 0px -3px;
+    font-size: 6em;
+    display: inline-block;
+    color: #fff;
+    font-weight: 100;
+}
+
+[data-item='1'], [data-item='8'] {
+    background: #6F98A8;
+}
+
+[data-item='2'], [data-item='4'] {
+    background: #2B8EAD;
+}
+
+[data-item='3'], [data-item='5'], [data-item='9'] {
+    background: #2f454e;
+}
+
+[data-item='6'], [data-item='7'] {
+    background: #BFBFBF;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #efefef;
+    font-family: sans-serif;
+}
