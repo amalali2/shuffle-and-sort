@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 button {
     overflow: visible;
     display: block;
@@ -24,8 +28,55 @@ button {
     box-shadow: 0px 5px 0px #2b8ead;
     text-shadow: 1px 1px 1px #2b8ead;
 }
+
 button:hover {
     opacity: .5;
+}
+
+footer {
+    background: #efefef;
+    text-align: center;
+    padding: 0.5em;
+}
+
+h1 {
+    border-bottom: 0.4em solid #BFBFBF;
+    padding: 1em;
+    text-align: center;
+    font-weight: 100;
+    color: #333;
+    margin: 0;
+}
+
+main {
+    background: #efefef;
+    display: flex;
+}
+
+ul {
+    margin: 0px 3px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 0.4em 0.9em;
+    margin: 0px -3px;
+    font-size: 6em;
+    display: inline-block;
+    color: #fff;
+    font-weight: 100;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: sans-serif;
 }
 
 @media screen and (min-width: 1000px) {
@@ -46,45 +97,17 @@ button:hover {
     }
 }
 
-h1 {
-    text-align: center;
-    font-weight: 100;
-    color: #333;
-}
-
-main {
-    border-top: 0.4em solid #BFBFBF;
-    background: #efefef;
-    display: flex;
-}
-
-ul {
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    display: flex;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-ul li {
-    list-style: none;
-    padding: 0.4em 0.9em;
-    margin: 0px -3px;
-    font-size: 6em;
-    display: inline-block;
-    color: #fff;
-    font-weight: 100;
-}
-
-.wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    font-family: sans-serif;
-}
-
 @media screen and (min-width: 360px) and (max-width: 1000px) {
+
+    .btn-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin: 22px 10px !important;
+    }
 
     [data-item='1'], [data-item='8'] {
         border-left: 0.3em solid #6F98A8;
@@ -111,13 +134,17 @@ ul li {
         color: #fff;
         margin: 0;
         padding: 0.5em;
+        border: none;
+    }
+
+    footer {
+        background: transparent;
     }
 
     main {
         flex-direction: column-reverse;
         align-items: center;
         background: transparent;
-        border: none;
     }
 
     ul {
@@ -133,7 +160,7 @@ ul li {
         display: block;
         margin: 0;
         color: #333;
-        font-size: 3em;
+        font-size: 2.5em;
         text-align: center;
         margin-bottom: 8px;
     }
