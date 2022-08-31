@@ -6,7 +6,16 @@ numbersList.forEach((item, index) => {
 })
 
 shuffleList = () => {
-
+  let index = 0
+  numbersList = numbersList.sort(() => { return .5 - Math.random() });
+  numbersWrapper.innerHTML = ''
+  while (index < numbersList.length) {
+    let number= document.createElement("li");
+    number.innerHTML = numbersList[index]
+    number.setAttribute('data-item', numbersList[index])
+    numbersWrapper.appendChild(number)
+    ++index;
+  }
 }
 
 sortList = () => {
